@@ -17,20 +17,15 @@
 	src="${pageContext.request.contextPath}/PUBLIC/bs/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse" style="height:5%">
 		<ul id="menu">
 			<div class="navbar-header">
 				<img class="navbar-left" style="margin-top:2px"
 					src="${pageContext.request.contextPath}/Images/Home_white.png"
 					width="40px" height="40px">
 			</div>
-			<li><a href="#" class="drop">Training</a> <!-- Begin 4 columns Item -->
-
+			<li class="menu_left"><a href="#" class="drop">Training</a> <!-- Begin 3 columns Item -->
 				<div class="dropdown_4columns">
-
-					<div class="col_4">
-						<h2>This is a heading title</h2>
-					</div>
 					<div class="col_1">
 						<h3>What is training?</h3>
 						<ul>
@@ -40,17 +35,18 @@
 							<li><a href="#">CrossFit</a></li>
 							<li><a href="#">Yoga</a></li>
 						</ul>
-
 					</div>
-
 					<div class="col_1">
-
 						<h3>How to training?</h3>
 						<ul>
 							<li><a href="#">All Articles</a></li>
 							<li><a href="#">Loss Weight</a></li>
 							<li><a href="#">Gain Muscle</a></li>
-							<br>
+						</ul>
+					</div>
+					<div class="col_1">
+						<h3>Muscle Group</h3>
+						<ul>
 							<li><a href="#">Chest</a></li>
 							<li><a href="#">Shoulder</a></li>
 							<li><a href="#">Back</a></li>
@@ -58,217 +54,134 @@
 							<li><a href="#">Triceps</a></li>
 							<li><a href="#">Legs</a></li>
 						</ul>
-
 					</div>
-
 					<div class="col_1">
-
-						<h3>Training calculator</h3>
+						<h3>Calculator</h3>
 						<ul>
-							<li><a href="#">FreelanceSwitch</a></li>
-							<li><a href="#">Creattica</a></li>
-							<li><a href="#">WorkAwesome</a></li>
-							<li><a href="#">Mac Apps</a></li>
-							<li><a href="#">Web Apps</a></li>
+							<li><a href="#">所有计算</a></li>
+							<li><a href="#">基础代谢率</a></li>
+							<li><a href="#">1 RM</li>
+							<li><a href="#">微量元素</a></li>
+							<li><a href="#">蛋白质</a></li>
+							<li><a href="#">卡路里</a></li>
+							<li><a href="#">体型</li>
 						</ul>
 					</div>
+				</div></li>
 
-				</div> <!-- End 4 columns container --></li>
-			<!-- End 4 columns Item -->
-
-			<li><a href="#" class="drop">Nutrition</a> <!-- Begin 3 columns Item -->
-
-				<div class="dropdown_4columns">
-					<!-- Begin 4 columns container -->
-
-					<div class="col_4">
-						<h2>This is a heading title</h2>
-					</div>
-
+			<li class="menu_left"><a href="#" class="drop">Nutrition</a>
+				<div class="dropdown_3columns">
 					<div class="col_1">
-
-						<h3>Some Links</h3>
+						<h3>Common Introduction</h3>
 						<ul>
-							<li><a href="#">ThemeForest</a></li>
-							<li><a href="#">GraphicRiver</a></li>
-							<li><a href="#">ActiveDen</a></li>
-							<li><a href="#">VideoHive</a></li>
-							<li><a href="#">3DOcean</a></li>
+							<li><a href="#">All Food</a></li>
+							<li><a href="#">Six Major Nutrients</a></li>
 						</ul>
-
 					</div>
-
 					<div class="col_1">
-
-						<h3>Useful Links</h3>
+						<h3>Major Nutrients Function</h3>
 						<ul>
-							<li><a href="#">NetTuts</a></li>
-							<li><a href="#">VectorTuts</a></li>
-							<li><a href="#">PsdTuts</a></li>
-							<li><a href="#">PhotoTuts</a></li>
-							<li><a href="#">ActiveTuts</a></li>
+							<li><a href="#">All Articles</a></li>
+							<li><a href="#">Loss Weight</a></li>
+							<li><a href="#">Gain Muscle</a></li>
 						</ul>
-
 					</div>
-
 					<div class="col_1">
-
-						<h3>Other Stuff</h3>
+						<h3>Meals</h3>
 						<ul>
-							<li><a href="#">FreelanceSwitch</a></li>
-							<li><a href="#">Creattica</a></li>
-							<li><a href="#">WorkAwesome</a></li>
-							<li><a href="#">Mac Apps</a></li>
-							<li><a href="#">Web Apps</a></li>
+							<li><a href="#">All Articles</a></li>
+							<li><a href="#">Meal Plans</a></li>
+							<li><a href="#">Recipes</a></li>
+							<li><a href="#">Supplements</a></li>
 						</ul>
-
 					</div>
+				</div></li>
 
+			<li class="menu_left"><a href="#" class="drop">Plan</a>
+				<div class="dropdown_2columns">
 					<div class="col_1">
-
-						<h3>Misc</h3>
+						<h3>概览</h3>
 						<ul>
-							<li><a href="#">Design</a></li>
-							<li><a href="#">Logo</a></li>
-							<li><a href="#">Flash</a></li>
-							<li><a href="#">Illustration</a></li>
-							<li><a href="#">More...</a></li>
+							<li><a href="#">所有文章</a></li>
+							<li><a href="#">男士减脂</a></li>
+							<li><a href="#">男士增肌</a></li>
+							<li><a href="#">女士减脂</a></li>
+							<li><a href="#">女士增肌</a></li>
+							<li><a href="#">专业健身模特计划</a></li>
 						</ul>
-
 					</div>
-
-				</div> <!-- End 4 columns container --></li>
-			<!-- End 3 columns Item -->
-			<li class="menu_left"><a href="#" class="drop">Plan</a> <!-- Begin 3 columns Item -->
-
-				<div class="dropdown_4columns">
-					<!-- Begin 4 columns container -->
-
-					<div class="col_4">
-						<h2>This is a heading title</h2>
-					</div>
-
 					<div class="col_1">
-
-						<h3>Some Links</h3>
+						<h3>计划</h3>
 						<ul>
-							<li><a href="#">ThemeForest</a></li>
-							<li><a href="#">GraphicRiver</a></li>
-							<li><a href="#">ActiveDen</a></li>
-							<li><a href="#">VideoHive</a></li>
-							<li><a href="#">3DOcean</a></li>
+							<li><a href="#">发现计划</a></li>
+							<li><a href="#">饮食方案</a></li>
+							<li><a href="#">补剂方案</a></li>
 						</ul>
-
 					</div>
+				</div></li>
 
+			<li class="menu_left"><a href="#" class="drop">Community</a>
+				<div class="dropdown_2columns">
 					<div class="col_1">
-
-						<h3>Useful Links</h3>
+						<h3>概览</h3>
 						<ul>
-							<li><a href="#">NetTuts</a></li>
-							<li><a href="#">VectorTuts</a></li>
-							<li><a href="#">PsdTuts</a></li>
-							<li><a href="#">PhotoTuts</a></li>
-							<li><a href="#">ActiveTuts</a></li>
+							<li><a href="#">所有文章</a></li>
+							<li><a href="#">男士减脂</a></li>
+							<li><a href="#">男士增肌</a></li>
+							<li><a href="#">女士减脂</a></li>
+							<li><a href="#">女士增肌</a></li>
+							<li><a href="#">专业健身模特计划</a></li>
 						</ul>
-
 					</div>
-
 					<div class="col_1">
-
-						<h3>Other Stuff</h3>
+						<h3>计划</h3>
 						<ul>
-							<li><a href="#">FreelanceSwitch</a></li>
-							<li><a href="#">Creattica</a></li>
-							<li><a href="#">WorkAwesome</a></li>
-							<li><a href="#">Mac Apps</a></li>
-							<li><a href="#">Web Apps</a></li>
+							<li><a href="#">发现计划</a></li>
+							<li><a href="#">饮食方案</a></li>
+							<li><a href="#">补剂方案</a></li>
 						</ul>
-
 					</div>
-
+				</div></li>
+				<li class="menu_left"><a href="#" class="drop">Store</a>
+				<div class="dropdown_2columns">
 					<div class="col_1">
-
-						<h3>Misc</h3>
+						<h3>概览</h3>
 						<ul>
-							<li><a href="#">Design</a></li>
-							<li><a href="#">Logo</a></li>
-							<li><a href="#">Flash</a></li>
-							<li><a href="#">Illustration</a></li>
-							<li><a href="#">More...</a></li>
+							<li><a href="#">所有文章</a></li>
+							<li><a href="#">男士减脂</a></li>
+							<li><a href="#">男士增肌</a></li>
+							<li><a href="#">女士减脂</a></li>
+							<li><a href="#">女士增肌</a></li>
+							<li><a href="#">专业健身模特计划</a></li>
 						</ul>
-
 					</div>
-
-				</div> <!-- End 4 columns container --></li>
-			<!-- End 3 columns Item -->
-			<li class="menu_left"><a href="#" class="drop">Store</a> <!-- Begin 3 columns Item -->
-
-				<div class="dropdown_4columns">
-					<!-- Begin 4 columns container -->
-
-					<div class="col_4">
-						<h2>This is a heading title</h2>
-					</div>
-
 					<div class="col_1">
-
-						<h3>Some Links</h3>
+						<h3>计划</h3>
 						<ul>
-							<li><a href="#">ThemeForest</a></li>
-							<li><a href="#">GraphicRiver</a></li>
-							<li><a href="#">ActiveDen</a></li>
-							<li><a href="#">VideoHive</a></li>
-							<li><a href="#">3DOcean</a></li>
+							<li><a href="#">发现计划</a></li>
+							<li><a href="#">饮食方案</a></li>
+							<li><a href="#">补剂方案</a></li>
 						</ul>
-
 					</div>
-
-					<div class="col_1">
-
-						<h3>Useful Links</h3>
-						<ul>
-							<li><a href="#">NetTuts</a></li>
-							<li><a href="#">VectorTuts</a></li>
-							<li><a href="#">PsdTuts</a></li>
-							<li><a href="#">PhotoTuts</a></li>
-							<li><a href="#">ActiveTuts</a></li>
-						</ul>
-
-					</div>
-
-					<div class="col_1">
-
-						<h3>Other Stuff</h3>
-						<ul>
-							<li><a href="#">FreelanceSwitch</a></li>
-							<li><a href="#">Creattica</a></li>
-							<li><a href="#">WorkAwesome</a></li>
-							<li><a href="#">Mac Apps</a></li>
-							<li><a href="#">Web Apps</a></li>
-						</ul>
-
-					</div>
-
-					<div class="col_1">
-
-						<h3>Misc</h3>
-						<ul>
-							<li><a href="#">Design</a></li>
-							<li><a href="#">Logo</a></li>
-							<li><a href="#">Flash</a></li>
-							<li><a href="#">Illustration</a></li>
-							<li><a href="#">More...</a></li>
-						</ul>
-
-					</div>
-
-				</div> <!-- End 4 columns container --></li>
-			<!-- End 3 columns Item -->
-
-
+				</div></li>
 		</ul>
-		<!-- /.container-fluid -->
+
+		<div class="navbar-form navbar-right">
+			<div class="col-lg-12">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search for...">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button">Go!</button>
+					</span>
+				</div>
+				<div class="navbar-right">
+					<img alt=""
+						src="${pageContext.request.contextPath}/Images/ic_user_white.png"
+						height="35px" style="margin-bottom:0px; margin-top:0px">
+				</div>
+			</div>
+		</div>
+
 	</nav>
 
 	<div id="carousel-example-generic" class="carousel slide"
