@@ -96,10 +96,9 @@ body, ul, li {
 	border:1px solid #777777;
 	border-top:none;
 	
+	z-index:999;
 	/* Gradient background */
-	background:#F4F4F4;
-	background: -moz-linear-gradient(top, #EEEEEE, #BBBBBB);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#BBBBBB));
+	background:#FFFFFF;
 
 	/* Rounded Corners */
 	-moz-border-radius: 0px 5px 5px 5px;
