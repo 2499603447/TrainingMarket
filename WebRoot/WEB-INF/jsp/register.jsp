@@ -3,7 +3,6 @@
 	@-- 注册界面样式
 	@--	2017/7/08 21:07
   -->
-
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <html lang="en">
@@ -26,7 +25,7 @@
 </head>
 
 <body>
-		<nav class="navbar navbar-inverse" style="height:5%;margin-bottom:0px">
+		<nav class="navbar navbar-inverse" style="height:5%;margin-bottom:0px;background:#222;">
 			<ul id="menu">
 				<div class="navbar-header">
 					<img class="navbar-left" style="margin-top:2px"
@@ -174,8 +173,6 @@
 						</div>
 					</div></li>
 			</ul>
-			
-
 		<div class="navbar-form navbar-right">
 			<div class="col-lg-12">
 				<div class="input-group">
@@ -248,20 +245,19 @@
 		<div class="row">
 			<div class = "col-lg-8 col-lg-offset-2">
 				<div class="panel panel-dault">
-					<div class="panel-heading" style="background:#222"><h3 style="text-align:center;font-size:30px;color:rgb(255,255,255)">健身教研室&nbsp;|&nbsp;注册</h3></div>
+					<div class="panel-heading" style="background:#444"><h3 style="text-align:center;font-size:30px;color:rgb(255,255,255)">健身教研室&nbsp;|&nbsp;注册</h3></div>
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-lg-6 col-lg-offset-3">
-									<form role="form" class="form-horizontal" method="post" action="">
+									<form id="registerForm" role="form" class="form-horizontal" method="post" action="${pageContext.request.contextPath}/servlet/registerServlet">
 										<div class="form-group" id = "inputEmail">
 												<label for = "email" >
 													<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;Email
 												</label>
 												<span  id="tipEmail" class="control-label" style="float:right"></span>
-												<input type="email" class="form-control" id="email" name="email" placeholder="email" onblur="checkEmail()">
+												<input type="email" class="form-control" id="email" name="email" placeholder="email" onblur="checkEmail()" >
 												<span class="glyphicon glyphicon-ok form-control-feedback" id="emailSuccess" style="visibility:hidden"></span>
 												<span class="glyphicon glyphicon-alert form-control-feedback" id="emailError" style="visibility:hidden" ></span>
-												
 										</div>
 										
 										<div class="form-group" id = "inputRegisterPassword">
@@ -283,8 +279,9 @@
 												<span class="glyphicon glyphicon-ok form-control-feedback" id="checkPasswordSuccess" style="visibility:hidden"></span>
 												<span class="glyphicon glyphicon-alert form-control-feedback" id="checkPasswordError" style="visibility:hidden" ></span>
 										</div>
+										
 										<div class="form-group">
-												<button class="btn btn-lg btn-primary btn-block" type="button" onclick="submitRegister()" tabIndex="5">注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</button>
+												<button id= "submitRegister" class="btn btn-lg btn-primary btn-block" type="button" onclick="submitRegisterAction()" tabIndex="3">注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</button>
 										</div>
 									</form>
 								</div>
@@ -292,12 +289,6 @@
 							<hr style=" height:2px;border:none;border-top:2px dotted #185598;" />
 									<div class="row">
 					                        <div class="col-lg-8 col-lg-offset-3">
-					                       		 <div class="form-top">
-					                        		<div class="form-top-left">
-					                        			
-					                        		</div>
-					                        		
-					                            </div>
 					                        	<h2 >...or login with:</h2>
 					                        	<div class="social-login-buttons">
 					                        		<div class="col-lg-12">
@@ -316,13 +307,9 @@
 					                    </div>	
 					</div>
 				</div>
-			
 			</div>
 		</div>
-	
-	
 	</div>
-	
 	
 	
 	<nav class=" navbar-inverse" role="navigation" style="margin-top:50px;margin-bottom:0px;background:#333338">

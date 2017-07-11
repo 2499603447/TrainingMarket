@@ -179,42 +179,62 @@
 						src="${pageContext.request.contextPath}/Images/ic_user_white.png"
 						height="35px"  data-toggle="dropdown"  style="margin-bottom:0px; margin-top:0px">
 						<ul class="dropdown-menu" role="menu" aria-labelledby="userPicture">
-							  <li style ="width:600px;opacity:1;">
+							  <li style ="width:350px;opacity:1;">
 							  		<div class="row" >
-					                        <div class="col-sm-6 col-sm-offset-3 form-box">
+					                        <div class="col-sm-9 col-sm-offset-2 form-box">
 					                        	<div class="form-top">
 					                        		<div class="form-top-left">
 					                        			<h3>Login to our site</h3>
-					                            		<p>Enter your username and password to log on:</p>
+					                            		<p>Enter your email and password to log on:</p>
 					                        		</div>
-					                        		<div class="form-top-right">
-					                        			<i class="fa fa-lock"></i>
-					                        		</div>
+					                        		
 					                            </div>
 					                            <div class="form-bottom">
 								                    <form role="form" action="" method="post" class="login-form">
-								                    	<div class="input-group" id="inputUserNo">
+								                    
+								                    	<div class="input-group" id="inputUserEmail">
 															<span class="input-group-addon"><i class="glyphicon glyphicon-user "></i></span>
-															<input type="text" class="form-control" name="userNo" id="userNo" placeholder="邮箱" onblur="check_userNo()" tabIndex="1" autofocus onclick="tip_userNo()" tabIndex="1" autofocus data-toggle="popover" title="账号验证"  data-container="body">
-															<span class="glyphicon glyphicon-ok form-control-feedback" id="userNoSuccess" style="visibility:hidden"></span>
-				                                    		<span class="glyphicon glyphicon-remove form-control-feedback" id="userNoError" style="visibility:hidden"></span>
+															<input type="text" class="form-control" name="Email" id="Email" placeholder="邮箱" onblur="check_userNo()" tabIndex="1" autofocus  tabIndex="1" autofocus data-toggle="popover" title="账号验证"  data-container="body">
+															<span class="glyphicon glyphicon-ok form-control-feedback" id="userEmailSuccess" style="visibility:hidden"></span>
+				                                    		<span class="glyphicon glyphicon-remove form-control-feedback" id="userEmailError" style="visibility:hidden"></span>
 														</div>
+														
 														<div class="clearfix"></div><br>
-								                        <div class="input-group" id="inputUserNo">
+								                        <div class="input-group" id="inputUserPassword">
 																<span class="input-group-addon"><i class="glyphicon glyphicon-lock "></i></span>
 																<input  class=form-control type="password"  name=password id=password 	placeholder="密码" onblur="check_password()" tabIndex="2" onclick="tip_password()" datatoggle="popover" title="密码验证" data-container="body">
 																<span class="glyphicon glyphicon-ok form-control-feedback" id="passwordSuccess" style="visibility:hidden"></span>
 					                                    		<span class="glyphicon glyphicon-remove form-control-feedback" id="passwordError" style="visibility:hidden"></span>
 														</div>
-														<div class="clearfix"></div><br>
-								                        <button type="submit" class="btn btn-primary btn-lg btn-block" style ="width:85%">Sign in!</button>
+														<div class="clearfix"></div>
+															 <div class="input-group"  style="width:100%;margin-top:10px;margin-bottom:10px">
+															 		<div class="col-lg-6" style="padding:0px">
+																		<div class="checkbox">
+																			<label>
+																				<input type="checkbox" id = "checkbox"> 记住密码
+																			</label>
+																		</div>
+																	</div>
+																	<div class="col-lg-6" >
+																		 <a href="#">忘记密码？</a>
+																	</div>
+															</div>
+															<div class="clearfix"></div>
+								                        <button type="submit" class="btn btn-primary btn-lg btn-block" style ="width:93%">Sign in!</button>
 								                    </form>
-							                    </div>
-					                        </div>
+							                    </div>																																												
+					                        </div>			
 					                    </div>
+					                    <hr style="margin:0px">
 					                    <div class="row">
-					                        <div class="col-sm-6 col-sm-offset-3 social-login">
-					                        	<h3>...or login with:</h3>
+					                        <div class="col-sm-9 col-sm-offset-2 social-login">
+					                       		 <div class="form-top">
+					                        		<div class="form-top-left">
+					                        			
+					                        		</div>
+					                        		
+					                            </div>
+					                        	<h3><a href="${pageContext.request.contextPath}/servlet/RegeristViewServlet">registered</a>&nbsp;&nbsp;or login with:</h3>
 					                        	<div class="social-login-buttons">
 						                        	<a class="btn btn-link-2" href="#">
 						                        		<img src = "${pageContext.request.contextPath}/Images/QQ.jpg" width="15px" height="20px">
@@ -224,7 +244,7 @@
 						                        	</a>
 						                        	<a class="btn btn-link-2" href="#">
 						                        		<img src = "${pageContext.request.contextPath}/Images/facebook.png" width="25px" height="20px">
-							                        	</a>
+													</a>
 					                        	</div>
 					                        </div>
 					                    </div>

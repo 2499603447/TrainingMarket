@@ -14,7 +14,7 @@ import com.trainingmarket.utils.JdbcUtils;
 
 public class TestDao {
 	/**
-	 * @param  userBean
+	 * @param  UserBean
 	 * @return void
 	 * @throws SQLException 
 	 */
