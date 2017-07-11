@@ -1,5 +1,5 @@
 body, ul, li, h3 {
-	font-size: 14px;
+	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 21px;
 	font-weight: bold;
@@ -56,7 +56,7 @@ body, ul, li, h3 {
 
 #menu li a {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 17px;
 	color: #EEEEEE;
 	display: block;
 	outline: 0;
@@ -98,7 +98,7 @@ body, ul, li, h3 {
 }
 
 .dropdown_1column {
-	width: 140px;
+	width: 220px;
 }
 
 .dropdown_2columns {
@@ -173,7 +173,7 @@ body, ul, li, h3 {
 #menu p, #menu h2, #menu h3, #menu ul li {
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 21px;
-	font-size: 12px;
+	font-size: 14px;
 	text-align: left;
 	text-shadow: 1px 1px 1px #FFFFFF;
 }
@@ -188,7 +188,7 @@ body, ul, li, h3 {
 }
 
 #menu h3 {
-	font-size: 14px;
+	font-size: 16px;
 	margin: 7px 0 14px 0;
 	padding-bottom: 7px;
 	border-bottom: 2px solid #000000;
@@ -200,7 +200,7 @@ body, ul, li, h3 {
 }
 
 #menu li:hover div a {
-	font-size: 12px;
+	font-size: 14px;
 	color: #000000;
 }
 
