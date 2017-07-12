@@ -15,9 +15,13 @@
 	src="${pageContext.request.contextPath}/PUBLIC/JQuery/jquery-2.1.4.min.js"></script>
 <script
 	src="${pageContext.request.contextPath}/PUBLIC/bs/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/JS/login.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-inverse" style="height:5%;margin-bottom:0px">
+	<div hidden>
+		<input id = "userEmailSession" value="${email}" > 
+	</div>
+	<nav class="navbar navbar-inverse" style="height:5%;margin-bottom:0px;border:0px">
 		<ul id="menu">
 			<div class="navbar-header">
 				<img class="navbar-left" style="margin-top:2px"
@@ -183,7 +187,7 @@
 						src="${pageContext.request.contextPath}/Images/ic_user_white.png"
 						height="35px" data-toggle="dropdown"
 						style="margin-bottom:0px; margin-top:0px">
-					<ul class="dropdown-menu" role="menu" aria-labelledby="userPicture">
+					<ul class="dropdown-menu" role="menu" aria-labelledby="userPicture"  id = "loginDropDown">
 						<li style="width:350px;opacity:1;">
 							<div class="row">
 								<div class="col-sm-9 col-sm-offset-2 form-box">
@@ -195,32 +199,36 @@
 
 									</div>
 									<div class="form-bottom">
-										<form role="form" action="" method="post" class="login-form">
+										<form role="form" action="${pageContext.request.contextPath}/servlet/LoginServlet" method="post" class="login-form" id = "loginForm">
 
-											<div class="input-group" id="inputUserEmail">
-												<span class="input-group-addon"><i
-													class="glyphicon glyphicon-user "></i></span> <input type="text"
-													class="form-control" name="Email" id="Email"
-													placeholder="邮箱" onblur="check_userNo()" tabIndex="1"
+										  <div class="input-group" id="inputUserEmail">
+												<span class="input-group-addon">
+												<i class="glyphicon glyphicon-user "></i></span> 
+												<input type="text" class="form-control" name="LoginEmail" id="LoginEmail"
+													placeholder="邮箱" onblur="check_email()" tabIndex="1"
 													autofocus tabIndex="1" autofocus data-toggle="popover"
-													title="账号验证" data-container="body"> <span
+													title="账号验证" data-container="body">
+												<span
 													class="glyphicon glyphicon-ok form-control-feedback"
-													id="userEmailSuccess" style="visibility:hidden"></span> <span
+													id="userEmailSuccess" style="visibility:hidden"></span> 
+													<span
 													class="glyphicon glyphicon-remove form-control-feedback"
 													id="userEmailError" style="visibility:hidden"></span>
-											</div>
-
+											</div> 
 											<div class="clearfix"></div>
 											<br>
 											<div class="input-group" id="inputUserPassword">
 												<span class="input-group-addon"><i
-													class="glyphicon glyphicon-lock "></i></span> <input
+													class="glyphicon glyphicon-lock "></i></span> 
+												<input
 													class=form-control type="password" name=password
 													id=password placeholder="密码" onblur="check_password()"
 													tabIndex="2" onclick="tip_password()" datatoggle="popover"
-													title="密码验证" data-container="body"> <span
+													title="密码验证" data-container="body"> 
+													<span
 													class="glyphicon glyphicon-ok form-control-feedback"
-													id="passwordSuccess" style="visibility:hidden"></span> <span
+													id="passwordSuccess" style="visibility:hidden"></span> 
+													<span
 													class="glyphicon glyphicon-remove form-control-feedback"
 													id="passwordError" style="visibility:hidden"></span>
 											</div>
@@ -240,7 +248,7 @@
 											</div>
 											<div class="clearfix"></div>
 											<button type="submit"
-												class="btn btn-primary btn-lg btn-block" style="width:93%">Sign
+												class="btn btn-primary btn-lg btn-block" style="width:93%" onclick = "submitLoginForm()">Sign
 												in!</button>
 										</form>
 									</div>
@@ -274,6 +282,9 @@
 							</div>
 						</li>
 					</ul>
+					<ul class = "dropdown-menu" role="menu" aris-labelledby = "userPicture" id="loginSuccessDropDown">
+						
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -281,7 +292,7 @@
 	</nav>
 
 	<div id="carousel-example-generic" class="carousel slide"
-		data-ride="carousel">
+		data-ride="carousel" style="position:relative;top:-4px">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<li data-target="#carousel-example-generic" data-slide-to="0"
@@ -291,7 +302,7 @@
 		</ol>
 
 		<!-- Wrapper for slides -->
-		<div class="carousel-inner" role="listbox">
+		<div class="carousel-inner" role="listbox" style="">
 			<div class="item active">
 				<img src="${pageContext.request.contextPath}/Images/home1.jpg"
 					alt="...">
@@ -299,7 +310,7 @@
 			</div>
 			<div class="item">
 				<img src="${pageContext.request.contextPath}/Images/home2.jpeg"
-					alt="...">
+					alt="..." style="">
 				<div class="carousel-caption">...</div>
 			</div>
 		</div>
@@ -315,7 +326,8 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
-	<script>
+	<script type="">
+	
 	</script>
 </body>
 </html>

@@ -192,7 +192,7 @@
 					                        	<div class="form-top">
 					                        		<div class="form-top-left">
 					                        			<h3>Login to our site</h3>
-					                            		<p>Enter your username and password to log on:</p>
+					                            		<p>Enter your username and password to log on:${email}</p>
 					                        		</div>
 					                            </div>
 					                            <div class="form-bottom">

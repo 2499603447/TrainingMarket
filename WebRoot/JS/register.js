@@ -1,5 +1,5 @@
 /**
- * 
+ * 注册js
  */
 var emailFlag = false;
 var passwordFlag = false;
@@ -108,7 +108,6 @@ function submitRegisterAction(){
 	if(emailFlag && checkPasswordFlag && passwordFlag){
 		submitRegister.submit();
 	}
-	
 }	
 function judgeAllNumber(input){
 	var letters = "0123456789";
