@@ -48,4 +48,13 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/servlet/LoginServlet</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AppViewServlet</servlet-name>
+    <servlet-class>com.trainingmarket.view.AppViewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppViewServlet</servlet-name>
+    <url-pattern>/servlet/AppViewServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

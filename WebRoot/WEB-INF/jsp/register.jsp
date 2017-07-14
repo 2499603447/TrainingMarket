@@ -272,7 +272,7 @@
 										
 										<div class="form-group" id = "inputCheckPassword">
 												<label for = "checkPassword"> <!-- class = "control-label" -->
-													<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>&nbsp;checkPassword
+													<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>&nbsp;check
 												</label>
 												<span  id="tipCheckPassword" class="control-label" style="float:right"></span>
 												<input type="password" class="form-control" id="checkPassword" name="checkPassword" placeholder="checkPassword" onblur="checkPassword2()" onkeyup = "checkPassword2()">

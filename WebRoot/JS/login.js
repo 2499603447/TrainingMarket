@@ -13,12 +13,17 @@ var passwordFlag = false;
 //}();
 window.onload = function()
 {
+	
 	var userEmailSession = document.getElementById("userEmailSession").value;
-	 alert(userEmailSession);
-	if(userEmailSession != null){
+	var loginDropDown = document.getElementById("loginDropDown");
+	var loginSuccessDropDown = document.getElementById("loginSuccessDropDown");
+	if(userEmailSession == null || userEmailSession ==""){
+		loginDropDown.style.display = "";
+		loginSuccessDropDown.style.display = "none";
+	}else{
 		loginDropDown.style.display = "none";
+		loginSuccessDropDown.style.display = "";
 	}
-   
 }
 function check_email(){
 	var LoginEmail = document.getElementById("LoginEmail").value;

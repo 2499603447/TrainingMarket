@@ -18,7 +18,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/JS/login.js"></script>
 </head>
 <body>
-	<div hidden>
+	 <div hidden>
 		<input id = "userEmailSession" value="${email}" > 
 	</div>
 	<nav class="navbar navbar-inverse" style="height:5%;margin-bottom:0px;border:0px">
@@ -172,6 +172,9 @@
 						</ul>
 					</div>
 				</div></li>
+				<li class="menu_left"><a
+				href="${pageContext.request.contextPath}/servlet/AppViewServlet"
+				class="drop">App</a></li>
 		</ul>
 
 		<div class="navbar-form navbar-right">
@@ -183,9 +186,14 @@
 					</span>
 				</div>
 				<div class="navbar-right dropdown">
-					<img id="userPicture" alt="" class="dropdown-toggle"
-						src="${pageContext.request.contextPath}/Images/ic_user_white.png"
-						height="35px" data-toggle="dropdown"
+						<img id="userPicture" alt="" class="dropdown-toggle"
+							src="${pageContext.request.contextPath}/Images/ic_user_white.png"
+							height="35px" data-toggle="dropdown"
+							style="margin-bottom:0px; margin-top:0px">
+						<img
+						id="shopCartPicture" alt="" class=""
+						src="${pageContext.request.contextPath}/Images/ic_shopping_cart_white.png"
+						height="35px" data-toggle=""
 						style="margin-bottom:0px; margin-top:0px">
 					<ul class="dropdown-menu" role="menu" aria-labelledby="userPicture"  id = "loginDropDown">
 						<li style="width:350px;opacity:1;">
@@ -200,7 +208,6 @@
 									</div>
 									<div class="form-bottom">
 										<form role="form" action="${pageContext.request.contextPath}/servlet/LoginServlet" method="post" class="login-form" id = "loginForm">
-
 										  <div class="input-group" id="inputUserEmail">
 												<span class="input-group-addon">
 												<i class="glyphicon glyphicon-user "></i></span> 
@@ -262,8 +269,7 @@
 
 									</div>
 									<h3>
-										<a
-											href="${pageContext.request.contextPath}/servlet/RegeristViewServlet">registered</a>&nbsp;&nbsp;or
+										<a href="${pageContext.request.contextPath}/servlet/RegeristViewServlet">registered</a>&nbsp;&nbsp;or
 										login with:
 									</h3>
 									<div class="social-login-buttons">
@@ -282,8 +288,64 @@
 							</div>
 						</li>
 					</ul>
-					<ul class = "dropdown-menu" role="menu" aris-labelledby = "userPicture" id="loginSuccessDropDown">
-						
+					<ul class = "dropdown-menu" role="menu" aris-labelledby = "userPicture" id="loginSuccessDropDown" style="padding:0 0">
+							<li>
+								<div class = "panel panel-default" style="margin-bottom: 0px;">
+									<div class = "panel-heading" style="">	
+										 <div class = "container" style="width:500px">
+											<div class = "row">
+												<div class = "col-lg-1" style=""> 
+													<img
+													src="${pageContext.request.contextPath}/Images/Avatar.png" style="">
+												</div>
+												<div class = "col-lg-1"> 
+													<!-- <div class = "container">
+															<div class = "row">
+																<div class = "col-lg-12" style= "" id = ""> -->
+																	<h6>
+																		&nbsp;&nbsp;&nbsp;${email}
+																	</h6>
+														<!-- 		</div>
+															</div>
+													</div> -->
+												</div>
+												<div class = "col-lg-2 pull-right" style= ""> 
+													 <button class = "btn btn-default" type="button" id = "logout" >注销 </button>
+												</div>
+												</div>
+											</div>
+									</div>
+									<div class = "panel-body" style="padding:0px">
+										<div class = "container" style="width:500px">
+											<div class= "row">
+												<div class = "col-lg-5">
+													<h3> MY STORE ACCOUNT </h3>	
+													<ul class="nav nav-pills nav-stacked">
+														<li> <a href="#" style="color:#5f5e5e">Order History</a></li>
+														<li><a href="#" style="color:#5f5e5e">Order History</a></li>
+														<li><a href="#" style="color:#5f5e5e">Order History</a></li>
+														<li><a href="#" style="color:#5f5e5e">Order History</a></li>
+														<li><a href="#" style="color:#5f5e5e">Order History</a></li>
+													</ul>
+												</div>
+												<div class= "col-lg-7" style= "border-left:1px solid #000000">
+													<h3> MY BODYSPACE </h3>	
+													<ul class="nav nav-pills nav-stacked">
+														<li> <a href="#" style="color:#5f5e5e">Dashboard</a></li>
+														<li><a href="#" style="color:#5f5e5e">Goal</a></li>
+														<li><a href="#" style="color:#5f5e5e">Plan</a></li>
+														<li><a href="#" style="color:#5f5e5e">Track</a></li>
+														<li><a href="#" style="color:#5f5e5e">Motivation</a></li>
+														<li><a href="#" style="color:#5f5e5e">Friends</a></li>
+														<li><a href="#" style="color:#5f5e5e">Followers</a></li>
+														<li><a href="#" style="color:#5f5e5e">Notifications</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
 					</ul>
 				</div>
 			</div>
@@ -328,6 +390,44 @@
 	</div>
 	<script type="">
 	
-	</script>
+	</script> 
+	<!-- <style>
+	body {
+ 		 padding-top: 50px;
+	}
+	.starter-template {
+	  padding: 40px 15px;
+	  text-align: center;
+	}
+	</style>
+	   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>/.nav-collapse
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+
+    </div>/.container -->
 </body>
 </html>
